@@ -1,167 +1,201 @@
- 
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
-/* universal selector - applies to all html elements tags */
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ /* universal selector - applies to all html elements tags */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
  }
 
-body{
+ body {
      background: #F8FAFD;
      font-family: "Google Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:400px;
-  font-style: normal;
-  font-variation-settings:
-    "GRAD" 0;
-}
-.gmail-container{
-height: 100vh;
-display: flex;
-flex-direction: column;
- 
-}
+     font-optical-sizing: auto;
+     font-weight: 300px;
+     font-style: normal;
+     font-variation-settings:
+         "GRAD" 0;
+ }
 
-/* header section css */
-.email-header{
-    display: flex;
-    text-align: center;
-    padding: 8px 12px;
-    height: 61px; 
-    background-color: #F8FAFD;
+ .gmail-container {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
 
-    width: 100%;
-    position: fixed;
-     
-}
-.header-search{
-    max-width: 500px;
-    background: #E9EEF6;
-     
-      border-radius: 50px;
-    
-}
-/* side bar btn css */
-.compose-btn{
-    background: #C2E7FF;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius:15px ;
-    box-shadow: ba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-    color: black;
-    text-align: center;
-    
+ }
+
+ /* header section css */
+ .email-header {
+     display: flex;
+     text-align: center;
+     padding: 8px 12px;
+     height: 59px;
+     background-color: #F8FAFD;
+
+     width: 100%;
+     position: fixed;
+
+ }
+
+ .header-search {
+     max-width: 500px;
+     background: #E9EEF6;
+
+     border-radius: 50px;
+
+ }
+
+ /* side bar btn css */
+ .compose-btn {
+     background: #C2E7FF;
+     font-size: 16px;
+     font-weight: 700;
+     border: none;
+     border-radius: 15px;
+     box-shadow: ba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+     color: black;
+     text-align: center;
+     padding-top: 7%;
 
 
-}
-.compose-btn:hover{
-    background: #C2E7FF !important;
-    box-shadow:  0 1px 3px 1px rgba(60,64,67,.15), 0 4px 5px 3px rgba(60,64,67,.15)   !important;
 
-}
-.sidebar{
-    
-    padding: 9px;
-    background: #F8FAFD;
-    top: 8%;
-    bottom: 0;
-    position: fixed;
-    z-index: 0;
-    
-}
-ul{
-    list-style-type: none;
-    padding: 0;
-}
-.sidebar-nav{
-    padding-left: 10px;
-}
-.nav-item{
-    padding: 10px 24px 0 20px;
-    height: 32px;
-    border-radius: 0 16px 16px 0;
-    font-size: 16px;
-    color: black;
-    margin: 2px 0;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
 
-/* main containt */
-.main-content{
-    display: flex;
-    flex-direction: column;
-     margin-left:16% ;
-    margin-right: 10%;
-    z-index: 0;
-    margin-top: 5%;
-     
-     
-    
+ }
 
-}
-.main-navbar{
-    border-radius: 18px 18px 0 0 ;
-      
-    
-}
- 
- 
-.primary-section{
-    padding: 20px;
-    cursor: pointer !important;
-    margin-top: 1%;
-    margin-bottom:1%;
+ .compose-btn:hover {
+     background: #C2E7FF !important;
+     box-shadow: 0 1px 3px 1px rgba(60, 64, 67, .15), 0 4px 5px 3px rgba(60, 64, 67, .15) !important;
+
+ }
+
+ .sidebar {
+
+     padding: 9px;
+     background: #F8FAFD;
+     top: 8%;
+     bottom: 0;
+     position: fixed;
+     z-index: 0;
+     font-size: 20px;
+     overflow-y: scroll;
+
+ }
+
+ ul {
+     list-style-type: none;
+     padding: 0;
+ }
+
+ .sidebar-nav {
+     padding-left: 10px;
+ }
+
+ .nav-item {
+     padding: 10px 24px 0 20px;
+     height: 32px;
+     border-radius: 0 16px 16px 0;
+     font-size: 16px;
+     color: black;
+     margin: 2px 0;
+     text-decoration: none;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+ }
+ .nav-item:hover {
+     background: rgb(240, 238, 238);
+     border: 1px;
+     border-radius: 0;
+ }
+
+
+ /* main containt */
+ .main-content {
+     display: flex;
+     flex-direction: column;
+     margin-left: 16%;
+     margin-right: 10%;
+     z-index: 8px;
+     margin-top: 5%;
+
+
+
+
+ }
+
+ .main-navbar {
+     border-radius: 18px 18px 0 0;
+
+
+ }
+
+
+ .primary-section {
+
+     cursor: pointer !important;
+     margin-top: 1%;
+     margin-bottom: 1%;
      align-items: center;
-       z-index: 0;
-    
-}
-.primary-section:hover{
-    color: blue;
+     z-index: 4px;
+
+ }
+
+ .primary-section:hover {
+     color: blue;
 
 
-}
-.div:hover{
-    background: grey;
-}
- 
-.email-list{
-background: white;
-padding-right: 4%;
-}
-.email-row{
-    height: 30px;
-    cursor: pointer;
-    padding: 5px;
-    
-}
-.main-navbar{
-    background: white;
-}
-.star-btn{
-    font-size: 25px;
-}
-.read{
-    background-color: #f2f6fc;
-}
-.unread{
-    background: #ffffff;
-}
-.read.form-check-input{
+ }
+
+ .primary-bar :hover {
+     background: rgb(240, 238, 238);
+     border: 1px;
+     border-radius: 0;
+ }
+
+
+
+ .email-list {
+     background: white;
+     padding-right: 4%;
+ }
+
+ .email-row {
+     height: 35px;
+     cursor: pointer;
+     padding: 5px;
+
+ }
+
+ .main-navbar {
+     background: white;
+ }
+
+ .star-btn {
+     font-size: 25px;
+ }
+
+ .read {
+     background-color: #f2f6fc;
+ }
+
+ .unread {
+     background: #ffffff;
+ }
+
+ .read.form-check-input {
      background-color: #f2f6fc;
      border: 1px soild black;
-}
-.unread .form-check-input{
-    background: #ffffff;
-}
-.unread{
-    font-style: bold;
-}
-/* .email-row :hover{
-    box-shadow:  0 1px 3px 1px rgba(60,64,67,.15), 0 4px 5px 3px rgba(60,64,67,.15)   !important;
-} */
+ }
+
+ .unread .form-check-input {
+     background: #ffffff;
+ }
+
+ .unread {
+     font-weight: bold;
+ }
+
+ .email-row :hover {
+     box-shadow: 0 5px 1px rgb(218, 220, 240), 3px 0 2px 0 rgb(218, 220, 240);
+     z-index: 1;
+ }
