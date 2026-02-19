@@ -134,13 +134,13 @@ function App() {
                     <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1" />
                   </svg>
                   Draft</li>
-                  
+
                 <li className='nav-item'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
                   </svg>
                   Less
-                  </li>
+                </li>
                 <li className='nav-item'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                     <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
@@ -198,533 +198,575 @@ function App() {
             </div>
 
             {/* main containt */}
-            <div className='col-md-10 main-content   '>
-              <div className='container main-navbar  '>
-                 
-                <div className='row '>
-                 <div className='primary-bar d-flex'> 
-                  <div className='col-md-3 primary-section  nav-item  p-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
-                      <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
-                      <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
-                    </svg>
-                    primary
+            <div className='col-md-10 main-content  '>
+              <div className='container main-navbar   '>
+
+                <div className='row h-95'>
+                  <div className='primary-bar d-flex '>
+                    <div className='col-md-3 primary-section  nav-item  p-2'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                      </svg>
+                      primary
+                    </div>
+
+                    <div className='col-md-3 primary-section nav-item promotion p-2'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                        <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0" />
+                        <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z" />
+                      </svg>
+                      Promotions
+                    </div>
+                    <div className='col-md-3 primary-section nav-item p-2'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                      </svg>
+                      Social
+                    </div>
+                    <div className='col-md-3 primary-section nav-item p-2'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                      </svg>
+                      Updates
+                    </div>
                   </div>
 
-                  <div className='col-md-3 primary-section nav-item promotion p-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
-                      <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0" />
-                      <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z" />
-                    </svg>
-                    Promotions
+                  <div className='email-list  box-1'>
+
+                    <div className='email-row d-flex align-items-center border-bottom read'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+
+
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+
+                    <div className='email-row d-flex align-items-center border-bottom read'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+
+
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+
+                    </div>
+
+                    <div className='email-row d-flex align-items-center border-bottom read'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+
+
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+
+
+                    <div className='email-row d-flex align-items-center border-bottom read'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+
+
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+
+
+                    <div className='email-row d-flex align-items-center border-bottom read'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+
+
+
+                    <div className='email-row d-flex align-items-center border-bottom read'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+
+                    </div>
+
+
+                    <div className='email-row d-flex align-items-center border-bottom read'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+
+                    </div>
+
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+
+
+
+
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+
+
+
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
+                    <div className='email-row d-flex align-items-center border-bottom unread'>
+                      <Form.Check types="checkbox" className="email-checkbox p-2 " />
+                      <button variant="link" className="star-btn p-0 btn p-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                          <path d="M2<div className='email-list'>.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                      </button>
+                      <span className="sender  p-2">Google </span>
+                      <span className="subject flex-grow-1  p-2">
+                        welcome to Gmail{" "}
+                        <span className="snippet p-2">
+                          -Get started with your new account
+                        </span>
+                      </span>
+                      <span className='time p-2 '>10.00 AM</span>
+                    </div>
                   </div>
-                  <div className='col-md-3 primary-section nav-item p-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
-                    </svg>
-                    Social
+                  <div className=' box-2 d-flex gap-4'>
+                    <img src="/calender.jpg" alt='calender' width="25px" height="25px" />
+                    <img src="/keep.jpg" alt='keep' width="30px" height="30px" />
+
+                    <img src="/task.png" alt='task' width="30px" height="30px" />
+                    <img src="/contact.png" alt='contact' width="30px" height="30px" />
+
+
                   </div>
-                  <div className='col-md-3 primary-section nav-item p-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                      <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
-                    </svg>
-                    Updates
-                  </div>
-                </div>
-              </div>
-              </div>
 
 
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
 
 
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
                 </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
 
-
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
               </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-
-
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-
-
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom read'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom   unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-              </div>
-              <div className='email-list'>
-                <div className='email-row d-flex align-items-center border-bottom unread'>
-                  <Form.Check types="checkbox" className="email-checkbox p-2 " />
-                  <button variant="link" className="star-btn p-0 btn p-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                    </svg>
-                  </button>
-                  <span className="sender  p-2">Google </span>
-                  <span className="subject flex-grow-1  p-2">
-                    welcome to Gmail{" "}
-                    <span className="snippet p-2">
-                      -Get started with your new account
-                    </span>
-                  </span>
-                  <span className='time p-2 '>10.00 AM</span>
-                </div>
-                </div>
             </div>
-            
-            
-            </div>
-           
+          </div>
+
         </div>
 
       </div>

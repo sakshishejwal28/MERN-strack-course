@@ -7,6 +7,10 @@
      box-sizing: border-box;
  }
 
+ @media (max-width:600px) { 
+    
+ }
+
  body {
      background: #F8FAFD;
      font-family: "Google Sans", sans-serif;
@@ -14,7 +18,11 @@
      font-weight: 300px;
      font-style: normal;
      font-variation-settings:
+
          "GRAD" 0;
+        
+            
+        
  }
 
  .gmail-container {
@@ -77,7 +85,7 @@
      position: fixed;
      z-index: 0;
      font-size: 20px;
-     overflow-y: scroll;
+    
 
  }
 
@@ -113,19 +121,36 @@
  .main-content {
      display: flex;
      flex-direction: column;
-     margin-left: 16%;
-     margin-right: 10%;
+     margin-left: 14%;
+     margin-right: 5%;
      z-index: 8px;
      margin-top: 5%;
+    
 
 
 
 
  }
+ .box-1{
+width: 95%;
+ }
+ .box-2 {
+     width: 5%;
+     background:  #F8FAFD;
+     
+ }
+ .box-2{
+    height: 100;
+    flex-direction:column;
+    align-items: start;
+
+ }
+
 
  .main-navbar {
-     border-radius: 18px 18px 0 0;
-
+     border-radius: 18px 18px 18px 18px;
+     
+ 
 
  }
 
@@ -137,6 +162,8 @@
      margin-bottom: 1%;
      align-items: center;
      z-index: 4px;
+     flex-direction: row;
+     margin-left: 3px;
 
  }
 
