@@ -1,33 +1,82 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+ 
+import DetailCard from './componants/DetailCard';
 function App() {
-  const [count, setCount] = useState(0)
+//javascript
+console.log("ppppppppppppp");
+//variable
+const name= "hoc" //we can not change value
+let age= 20 // we can change
+console.log(name,"hoc ===>");
+console.log(age, "age==>");
+//string
+const a="hoc tech solution";
+//array
+const b=["apple","text","pune",2345];
+//object
+const data ={
+  name:"text",
+  city:"pune"
+};
+//if else
+  const fullname="hoc"
+if(fullname=="hoc"){
+  console.log(true)
+}
+else{
+  console.log(false)
+}
+//function
+function addnumber(){
+  console.log("click")
+}
+//.map
+const carddata =[
+  {
+CardTitle:"title-1",
+ discription:"rose",
+  },
+  {
+CardTitle:"title-1",
+ discription:"rose",
+  },
+   {
+CardTitle:"title-1",
+ discription:"rose",
+  },
+  {
+CardTitle:"title-1",
+ discription:"rose",
+  },
+   {
+CardTitle:"title-1",
+ discription:"rose",
+  },
+  {
+CardTitle:"title-1",
+ discription:"rose",
+  },
+];
+console.log(carddata ,"------")
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <button className='btn btn-primary'onClick={addnumber}>click me</button>
+
+      <div className="container">
+        <div className="row my-2">
+          {
+             carddata .map((each)=>(
+               
+          <div className="col-md-3">
+          <DetailCard CardTitle={each.CardTitle} discription={each.discription}/>
+              
+          </div>
+          )) }
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </>
   )
 }
