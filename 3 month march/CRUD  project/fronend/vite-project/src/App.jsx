@@ -7,7 +7,7 @@ import Table from 'react-bootstrap/Table';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 import "./style.css";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'; 
 import Modal from 'react-bootstrap/Modal';
 
 

@@ -18,87 +18,30 @@
 
 // }
 
-console.log("hello node,js project start")
-
 const express = require('express') //node js fremwork
 const app = express() //app variable- store express function
  
 const cors = require("cors")//liberary -solve cors error
-const mongoose = require('mongoose');//labirary -connect mongodb database
+const { connectDB } = require('./config/db');
 app.use(express.json())//convet all data into json formate
 app.use(cors())
 //DB CONNECTION
-mongoose.connect("mongodb://localhost:27017/item-database").then(() => console.log("mongodb connected")).catch((error) => console.log(error))
-
-//schema-model-database table structure
-//value store database -structure
-//format
- const itemsSchema = new mongoose.Schema({
-    name: String,
-    decription: String,
-    sellingPrice: Number,
-    PurchasePrice: Number,
-    quantity:Number,
-    unit:String
- })
- const Items = new mongoose.model("Items",itemsSchema)
+connectDB()
 
 
  //create API
- app.post("/api/create-item", async (req , res) => {
-   try {
-    const {name, decription, sellingPrice , PurchasePrice, quantity, unit} = req.body
-
-    const saveItem = new Items(
-      {   
-      name,
-      decription,
-       sellingPrice,
-       PurchasePrice,
-         quantity,
-          unit
-      }
-    )
-
-     await saveItem.save()
-    res.status(201).json({message:"Item created", data : saveItem});
-
-   } catch (error) {
-    console.log(error)
-   }
- })
+ app.post("/api/create-item",addItem )
 
 
  //update API
-app.put("/api/update-item", async (req, res) =>{
-  try{
-
-  }catch (error) {
-console.log()
-  }
-})
+app.put("/api/update-item",  editItem)
 
   //delete API 
- app.delete("/api/delete-item/:id", async (req , res) => {
-  try {
-    const { id ,} = req.params
-    const deleteItem = await Items.findByIdAndDelete(id )
-    res.status(200).json({message:" item deleted",  deleteItem:  deleteItem   });
-  } catch (error) {
-    console.log(error)
-  }
- })
+ app.delete("/api/delete-item/:id",  deleteItem)
  
  //get all API
 
- app.get("/api/get-all-item", async (req, res) =>{
-  try{
-const items = await Items.find()
- res.status(200).json({message:"get all item", data :items  });
-  }catch (error) {
-console.log(error)
-  }
-}) 
+ app.get("/api/get-all-item", getAllItems) 
 
  //helth API
  app.get("/helth", (req , res) => {
