@@ -23,6 +23,7 @@ const app = express() //app variable- store express function
  
 const cors = require("cors")//liberary -solve cors error
 const { connectDB } = require('./config/db');
+const {addItem,editItem,deleteItem,getAllItems } = require("./controllers/itemcontroller")
 app.use(express.json())//convet all data into json formate
 app.use(cors())
 //DB CONNECTION

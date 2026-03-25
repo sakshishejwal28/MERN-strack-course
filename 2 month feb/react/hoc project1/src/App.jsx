@@ -77,7 +77,7 @@ console.log(carddata ,"------")
         </div>
       </div>
 
-    </>
+     </>
   )
 }
 

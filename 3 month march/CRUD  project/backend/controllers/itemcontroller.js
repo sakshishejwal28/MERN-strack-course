@@ -1,5 +1,7 @@
- import Items from "./../models/itemmodels"
-const addItem = async () => {
+ 
+const Items = require("./../models/itemmodels")
+
+const addItem = async (req, res) => {
 
     try {
         const { name, decription, sellingPrice, PurchasePrice, quantity, unit } = req.body
@@ -23,7 +25,7 @@ const addItem = async () => {
     }
 }
 
-const getAllItems = async () => {
+const getAllItems = async (req, res) => {
 
     try {
         const items = await Items.find()
@@ -33,7 +35,7 @@ const getAllItems = async () => {
     }
 }
 
-const deleteItem = async () => {
+const deleteItem = async (req, res) => {
 
     try {
         const { id, } = req.params
@@ -44,7 +46,7 @@ const deleteItem = async () => {
     }
 }
 
-const editItem = async () => {
+const editItem = async (req, res) => {
 
     try {
 
