@@ -1,20 +1,25 @@
-body{
-    background-color: #95f746 !important  ;
+body {
+    background-color: #95f746 !important;
     display: flex !important;
     justify-content: center !important;
-    align-items: center !important;
+    align-items: center;
     height: 100vh !important;
-    
+
 }
-.main-box{
+
+.main-box {
     background-color: white;
-    
+    width: 25%;
+    align-items: center;
+    margin: 0 40% 0 40%;
 }
-input{
-    background:white;
-    
+
+input {
+    background: white;
+
 }
-.btn-login{
+
+.btn-login {
     background-color: #95f746 !important;
 
 }
