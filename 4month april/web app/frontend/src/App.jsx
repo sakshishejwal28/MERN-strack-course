@@ -9,7 +9,9 @@ import Dashboard from './screens/Dashboard';
 import Authnavbar from './componants/Authnavbar';
   
    const App = () => {
+     console.log(import.meta.env.VITE_API_URL_BACKED,"---->")
     return (
+      
       <BrowserRouter>
       <div> 
         <Authnavbar/>

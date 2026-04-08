@@ -9,7 +9,8 @@
 // 4 API get all records -grt all records from DB and show to ui front end
 
 
-
+require('dotenv').config() // or import 'dotenv/config' if you're using ES6
+console.log(process.env.PORT,"===>") // remove this after you've confirmed it is working
 // console.log("hello node.js")
 // const getdata=()=>{
 
@@ -52,9 +53,9 @@ app.put("/api/update-item",  editItem)
 
 
  //server started
- const PORT = 9090
+ const PORT = process.env.PORT ||9000
 
 
  app.listen(PORT ,  () => {
-   console.log("server started" , PORT)
+   console.log( `server is running ${PORT}`)
  }) 

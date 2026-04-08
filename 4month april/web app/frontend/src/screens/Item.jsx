@@ -41,7 +41,7 @@ function Item() {
       };
 
       console.log(data, "form submitted");
-      const apiResponse = await axios.post("http://localhost:9090/api/create-item",
+      const apiResponse = await axios.post(`${import.meta.env.VITE_API_URL_BACKED}/create-item`,
         data,).then(console.log("yes")).catch((error) => console.log("error"))
 
       console.log(apiResponse)
@@ -65,7 +65,7 @@ function Item() {
 
   const getAllItemsData = async () => {
     try {
-      const apiResponse = await fetch("http://localhost:9090/api/get-all-item");
+      const apiResponse = await fetch(`${import.meta.env.VITE_API_URL_BACKED}/get-all-item`);
       const responseData = await apiResponse.json();
       setData(responseData.data);
       console.log(responseData);
@@ -106,7 +106,7 @@ function Item() {
     try {
       console.log(id,"_id==>")
        
-      const apiResponse = await axios.delete(`http://localhost:9090/api/delete-item/${id}`)
+      const apiResponse = await axios.delete(` ${import.meta.env.VITE_API_URL_BACKED}/delete-item/${id}`)
       setShow(false);
       console.log(apiResponse)
        getAllItemsData();
@@ -237,7 +237,7 @@ function Item() {
                   itemData &&
                   itemData.map((each, index) => {
                     return (
-                      <tr>
+                      <tr key={index +0}>
                         <td>{index + 1}</td>
                         <td>{each.name}</td>
                         <td>{each.decription}</td>
