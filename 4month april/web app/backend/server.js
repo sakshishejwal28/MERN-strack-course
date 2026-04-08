@@ -25,16 +25,19 @@ const app = express() //app variable- store express function
 const cors = require("cors")//liberary -solve cors error
 const { connectDB } = require('./config/db');
 const {addItem,editItem,deleteItem,getAllItems } = require("./controllers/itemcontroller")
+const { login, register } = require('./controllers/authcontrollers')
 app.use(express.json())//convet all data into json formate
 app.use(cors())
 //DB CONNECTION
 connectDB()
 
 
+
+// authentication api
+app.post("/api/login",login)
+app.post("/api/register",register)
  //create API
  app.post("/api/create-item",addItem )
-
-
  //update API
 app.put("/api/update-item",  editItem)
 
@@ -50,6 +53,9 @@ app.put("/api/update-item",  editItem)
   console.log("ppp")
    res.status(200).json({ message: "server is running"})
  })
+
+ //dashboard
+ app.get("api/get-dahboard")
 
 
  //server started
