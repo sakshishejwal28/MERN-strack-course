@@ -5,6 +5,8 @@ const mongoose = require('mongoose');//labirary -connect mongodb database
 //format
  const UserSchema = new mongoose.Schema({
     name: String,
+    city: String,
+    mobileno: Number,
     email: String,
     password: String ,
     
