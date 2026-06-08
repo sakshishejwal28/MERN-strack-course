@@ -1,19 +1,24 @@
- import React from "react";
-import useCounter from "../components/example3";
-import useCustomEffect from "../components/example2";
+"use client"
+import Counter from "../components/Timer";
+import Timer from "../components/counter";
+import useCustom from "../components/usecustom";
 
-function App() {
-  const { count, increment, decrement } = useCounter();
+
+
+export default function Home() {
+  const { count, increment, decrement, reset } = useCustom(10);
 
   return (
     <div>
-      <h1>Separate Hooks Example</h1>
-      <h2>Count: {count}</h2>
+      <Counter />
+      <Timer />
+      <p>Count: {count}</p>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+      <button onClick={reset}>reset</button>
 
-      <button onClick={increment}>Increase</button>
-      <button onClick={decrement}>Decrease</button>
+
     </div>
+
   );
 }
-
-export default App;
